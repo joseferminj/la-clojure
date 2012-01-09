@@ -20,3 +20,9 @@ Use ack to fix busy looping at REPL startup
 
 On ack set title to current namespace
 
+## Jose
+
+- Find a better way of showing the clojure compilation errors during test execution.
+Currently the compilation error stacktrace is hidden by other logs.
+
+- Migrating paredit actions tests to clojure. Create a macro that chains several actions executions

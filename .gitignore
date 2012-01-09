@@ -5,3 +5,5 @@ out
 dist
 jflex.log
 *~
+.ant_targets
+

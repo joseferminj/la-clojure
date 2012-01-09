@@ -180,23 +180,17 @@
         <keyboard-shortcut keymap="$default" first-keystroke="meta shift 0"/>
       </action>
 
-      <action id="org.jetbrains.plugins.clojure.actions.editor.SlurpBackwardsAction"
-              class="org.jetbrains.plugins.clojure.actions.editor.SlurpBackwardsAction"
-              text="Slurp Backwards" description="Swallow the element preceeding the current s-expression">
-        <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift 9"/>
-      </action>
-
-      <action id="org.jetbrains.plugins.clojure.actions.editor.SlurpForwardsAction"
-              class="org.jetbrains.plugins.clojure.actions.editor.SlurpForwardsAction"
-              text="Slurp Forwards" description="Swallow the element following the current s-expression">
-        <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift 0"/>
-      </action>
-
       <action id="org.jetbrains.plugins.clojure.actions.editor.SpliceAction"
               class="org.jetbrains.plugins.clojure.actions.editor.SpliceAction"
               text="Splice S-Expression" description="Splice the current s-expression into it’s parent">
         <keyboard-shortcut keymap="$default" first-keystroke="alt meta S"/>
       </action>
+
+        <!--<action id="org.jetbrains.plugins.clojure.actions.editor.PareditKillAction"-->
+                <!--class="org.jetbrains.plugins.clojure.actions.editor.PareditKillAction"-->
+                <!--text="Paredit kill " description="Kill a line as if with `kill-line', but respecting delimiters">-->
+          <!--<keyboard-shortcut keymap="$default" first-keystroke="alt meta K"/>-->
+        <!--</action>-->
 
       <add-to-group group-id="EditMenu" anchor="last"/>
 

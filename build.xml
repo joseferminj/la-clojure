@@ -44,15 +44,15 @@
     <path refid="jdk.classpath"/>
     <path refid="idea.classpath"/>
     <path refid="tools.path"/>
-    <fileset dir="${clojure.lib}">
-      <include name="clojure.jar"/>
-    </fileset>
+    <!--<fileset dir="${clojure.lib}">-->
+      <!--<include name="clojure.jar"/>-->
+    <!--</fileset>-->
     <fileset dir="${project.lib}">
       <include name="*.jar"/>
     </fileset>
-    <fileset dir="${clojure.contrib}">
-      <include name="clojure-contrib.jar"/>
-    </fileset>
+    <!--<fileset dir="${clojure.contrib}">-->
+      <!--<include name="clojure-contrib.jar"/>-->
+    <!--</fileset>-->
   </path>
 
   <path id="clojure.base.path">
@@ -62,10 +62,7 @@
     <pathelement location="${src.dir}"/>
     <pathelement location="${project.dest}"/>
     <fileset dir="${clojure.lib}">
-      <include name="clojure.jar"/>
-    </fileset>
-    <fileset dir="${clojure.contrib}">
-      <include name="clojure-contrib.jar"/>
+      <include name="clojure-1.3.0.jar"/>
     </fileset>
   </path>
 
@@ -164,14 +161,14 @@
     </jar>
 
     <copy todir="${project.dir}/tempjar/clojure-plugin/lib">
-      <fileset dir="${clojure.lib}">
-        <include name="clojure.jar"/>
-      </fileset>
-      <fileset dir="${clojure.contrib}">
-        <include name="clojure-contrib.jar"/>
-      </fileset>
+        <!--<fileset dir="${clojure.lib}">-->
+        <!--<include name="clojure.jar"/>-->
+        <!--</fileset>-->
+        <!--<fileset dir="${clojure.contrib}">-->
+        <!--<include name="clojure-contrib.jar"/>-->
+        <!--</fileset>-->
         <fileset dir="${project.lib}">
-            <include name="tools.nrepl-0.0.6-SNAPSHOT.jar"/>
+            <include name="*.jar"/>
         </fileset>
     </copy>
 
